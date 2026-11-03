@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 6 - jQuery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">WEB TECHNOLOGIES · ASSIGNMENT 6</p>
+    <h1>jQuery Playground</h1>
+    <p>Selectors, effects, DOM manipulation and animations</p>
+  </header>
+
+  <main class="container">
+    <section class="intro card">
+      <h2>Part 1. Getting Started with jQuery</h2>
+      <h3 id="welcome">Welcome to my jQuery page!</h3>
+      <p class="description">This paragraph is selected by its class. jQuery can change text, HTML and CSS.</p>
+      <p>jQuery can also select elements by their tag name.</p>
+      <div class="button-row">
+        <button id="changeText">Change text</button>
+        <button id="changeHtml">Change HTML</button>
+        <button id="changeCss">Change CSS</button>
+      </div>
+      <p class="hint">Open the browser console to see: “jQuery is ready!”</p>
+    </section>
+
+    <section class="card">
+      <h2>Part 2. jQuery Effects</h2>
+      <div class="task">
+        <h3>Task 2. Visibility Methods</h3>
+        <p id="visibilityText">You can hide, show or toggle this paragraph.</p>
+        <div class="button-row">
+          <button id="hideBtn">Hide</button>
+          <button id="showBtn">Show</button>
+          <button id="toggleBtn" class="secondary">Toggle</button>
+        </div>
+      </div>
+      <div class="task">
+        <h3>Task 3. Fade Methods</h3>
+        <img id="fadeImage" class="sample-image" src="https://picsum.photos/id/1018/700/300" alt="Mountain landscape">
+        <div class="button-row">
+          <button id="fadeInBtn">Fade in</button>
+          <button id="fadeOutBtn">Fade out</button>
+          <button id="fadeToggleBtn" class="secondary">Fade toggle</button>
+        </div>
+      </div>
+      <div class="task">
+        <h3>Task 4. Slide Methods</h3>
+        <button id="slideToggleBtn">Open / close panel</button>
+        <div id="slidePanel" class="panel">
+          <strong>jQuery slide panel</strong>
+          <p>This panel uses slideDown(), slideUp() and slideToggle().</p>
+        </div>
+        <div class="button-row">
+          <button id="slideDownBtn">Slide down</button>
+          <button id="slideUpBtn">Slide up</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Part 3. DOM Manipulation with jQuery</h2>
+      <div class="task">
+        <h3>Task 5. Add &amp; Remove Elements</h3>
+        <ul id="itemList">
+          <li>First item</li>
+          <li>Second item</li>
+        </ul>
+        <div class="button-row">
+          <button id="appendBtn">Add item</button>
+          <button id="prependBtn">Add to beginning</button>
+          <button id="removeBtn" class="danger">Remove last item</button>
+        </div>
+      </div>
+      <div class="task">
+        <h3>Task 6. Modifying Attributes</h3>
+        <img id="attributeImage" class="sample-image small-image" src="https://picsum.photos/id/1025/500/250" alt="A dog">
+        <p><a id="demoLink" href="https://www.example.com" target="_blank" rel="noopener">Example link</a></p>
+        <div class="button-row">
+          <button id="changeImageBtn">Change image</button>
+          <button id="changeLinkBtn" class="secondary">Change link</button>
+        </div>
+      </div>
+      <div class="task">
+        <h3>Task 7. Form Interaction</h3>
+        <form id="profileForm">
+          <label for="nameInput">Name</label>
+          <input id="nameInput" type="text" placeholder="Enter your name">
+          <label for="emailInput">Email</label>
+          <input id="emailInput" type="email" placeholder="Enter your email">
+        </form>
+        <div class="live-output">
+          <p><strong>Name:</strong> <span id="nameOutput">Your name will appear here</span></p>
+          <p><strong>Email:</strong> <span id="emailOutput">Your email will appear here</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Part 4. Animations</h2>
+      <div class="task">
+        <h3>Task 8. Basic Animation</h3>
+        <div class="animation-stage"><div id="basicBox" class="moving-box"></div></div>
+        <button id="basicAnimateBtn">Animate square</button>
+      </div>
+      <div class="task">
+        <h3>Task 9. Sequential Animations</h3>
+        <p>The box moves right, moves down, shrinks and returns to its starting position.</p>
+        <div class="animation-stage tall-stage"><div id="sequenceBox" class="moving-box"></div></div>
+        <button id="sequenceBtn">Start sequence</button>
+      </div>
+      <div class="task">
+        <h3>Task 10. Combined Animation</h3>
+        <div class="animation-stage"><div id="combinedBox" class="moving-box"></div></div>
+        <button id="combinedBtn">Start combined animation</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Part 5. Mini Project</h2>
+      <h3>Task 11. Accordion Menu</h3>
+      <p>Click a section title to expand or collapse it with a slide animation.</p>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">What is jQuery?</div>
+          <div class="accordion-content">jQuery is a JavaScript library that makes DOM manipulation, events and animations easier.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">What are selectors?</div>
+          <div class="accordion-content">Selectors such as $("#id"), $(".class") and $("tag") are used to find HTML elements.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">What are effects?</div>
+          <div class="accordion-content">Effects like hide(), fadeIn() and slideToggle() add simple visual changes to a page.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Created by Nygmet Aiym · IT-2514</footer>
+  </main>
+</body>
+</html>

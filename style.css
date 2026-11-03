@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f3f5f9;
+  color: #263247;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.hero {
+  padding: 54px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #263b70, #5676b8);
+}
+.hero h1 { margin: 5px 0; font-size: 2.5rem; }
+.hero p { margin: 5px 0; }
+.eyebrow { letter-spacing: 2px; font-size: .8rem; opacity: .85; }
+.container { width: min(900px, 92%); margin: 28px auto; }
+.card {
+  background: white;
+  padding: 25px;
+  margin: 22px 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(32, 48, 80, .07);
+}
+h2 { color: #304d88; margin-top: 0; }
+h3 { color: #34415a; margin-bottom: 10px; }
+.task { padding: 15px 0; border-top: 1px solid #e8ebf2; }
+.task:first-of-type { border-top: 0; }
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 4px 5px 4px 0;
+  background: #4166a8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+button:hover { background: #2c4d87; transform: translateY(-1px); }
+button.secondary { background: #78869d; }
+button.danger { background: #b65d67; }
+.button-row { margin-top: 10px; }
+.hint { color: #758198; font-size: .9rem; }
+.sample-image { display: block; width: min(100%, 600px); height: 210px; object-fit: cover; border-radius: 10px; margin: 12px 0; }
+.small-image { width: min(100%, 420px); height: 160px; }
+.panel { display: none; margin-top: 12px; padding: 18px; background: #edf2fc; border-left: 4px solid #4166a8; border-radius: 8px; }
+ul { padding-left: 22px; }
+li { padding: 4px 0; }
+label { display: block; margin: 10px 0 4px; font-weight: 600; }
+input { width: min(100%, 420px); padding: 11px; border: 1px solid #ccd3e0; border-radius: 8px; display: block; }
+.live-output { margin-top: 15px; padding: 12px 16px; background: #f2f5fb; border-radius: 8px; }
+.live-output p { margin: 4px 0; }
+.animation-stage { position: relative; height: 125px; background: #f0f3f9; border-radius: 10px; padding: 12px; overflow: hidden; }
+.tall-stage { height: 220px; }
+.moving-box { position: relative; width: 55px; height: 55px; background: #e4a45d; border-radius: 8px; }
+.accordion { margin-top: 16px; }
+.accordion-item { border: 1px solid #dde3ee; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+.accordion-header { padding: 14px 16px; background: #edf2fc; font-weight: 600; cursor: pointer; }
+.accordion-header:hover, .accordion-header.active { background: #4166a8; color: white; }
+.accordion-content { display: none; padding: 14px 16px; background: white; }
+footer { text-align: center; color: #7a8496; padding: 20px; }
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .card { padding: 18px; }
+}
