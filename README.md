@@ -17,11 +17,7 @@ A small web project that practices the core features of jQuery: selectors, effec
 
 ## How to Run
 
-1. Download or clone the project.
-2. Open `index.html` in any modern browser.
-3. Open the browser console (F12) to see the `jQuery is ready!` message.
-
-jQuery is loaded from a CDN in the `<head>`, so an internet connection is required.
+https://nurgulibraeva701-rgb.github.io/jQuery-Selectors-Effects-Animations-/
 
 ## Tasks Overview
 
